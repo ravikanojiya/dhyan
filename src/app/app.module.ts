@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { NgbCarouselModule, NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { RouterModule } from '@angular/router';
 import { AppRoutingModule } from './app.routing';
 
@@ -30,6 +30,7 @@ import { LoginComponent } from './login/login.component';
     BrowserModule,
     NgbModule,
     FormsModule,
+    NgbCarouselModule,
     RouterModule,
     AppRoutingModule,
     HomeModule

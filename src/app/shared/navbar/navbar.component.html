@@ -1,82 +1,357 @@
-<nav id="navbar-main" class="navbar navbar-main navbar-expand-lg navbar-transparent navbar-light headroom headroom--top headroom--pinned">
-  <div class="container">
+<nav
+  id="navbar-main"
+  class="
+    navbar navbar-main navbar-expand-lg navbar-transparent navbar-light
+    headroom headroom--top headroom--pinned
+  "
+>
+  <div class="container-fluid">
     <a class="navbar-brand mr-lg-5" [routerLink]="['/home']">
-      <img src="./assets/img/brand/argon-white.png">
+      <img src="../../../assets/img/brand/dhyan-networks-logo.webp" />
     </a>
-    <button class="navbar-toggler" type="button" (click)="isCollapsed = !isCollapsed"
-          [attr.aria-expanded]="!isCollapsed" aria-controls="navbar_global">
+    <button
+      class="navbar-toggler"
+      type="button"
+      (click)="isCollapsed = !isCollapsed"
+      [attr.aria-expanded]="!isCollapsed"
+      aria-controls="navbar_global"
+    >
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="navbar-collapse collapse" id="navbar_global" [ngbCollapse]="isCollapsed">
+    <div
+      class="navbar-collapse collapse"
+      id="navbar_global"
+      [ngbCollapse]="isCollapsed"
+    >
       <div class="navbar-collapse-header">
         <div class="row">
           <div class="col-6 collapse-brand">
             <a [routerLink]="['/home']">
-              <img src="./assets/img/brand/blue.png">
+              <img src="../../../assets/img/brand/dhyan-networks-logo.webp" />
             </a>
           </div>
           <div class="col-6 collapse-close">
-            <button type="button" class="navbar-toggler" (click)="isCollapsed = !isCollapsed"
-                  [attr.aria-expanded]="!isCollapsed" aria-controls="navbar_global">
+            <button
+              type="button"
+              class="navbar-toggler"
+              (click)="isCollapsed = !isCollapsed"
+              [attr.aria-expanded]="!isCollapsed"
+              aria-controls="navbar_global"
+            >
               <span></span>
               <span></span>
             </button>
           </div>
         </div>
       </div>
-      <ul class="navbar-nav navbar-nav-hover align-items-lg-center">
+      <ul class="navbar-nav navbar-nav-hover align-items-lg-center ml-lg-auto">
         <li class="nav-item dropdown">
           <a class="nav-link no-caret" data-toggle="dropdown" role="button">
             <i class="ni ni-ui-04 d-lg-none"></i>
-            <span class="nav-link-inner--text">Components</span>
+            <span class="nav-link-inner--text text-dark">Solutions</span>
           </a>
-          <div class="dropdown-menu-xl dropdown-menu" >
+          <div class="dropdown-menu-xl dropdown-menu">
             <div class="dropdown-menu-inner">
-              <a routerLinkActive="active" [routerLink]="['documentation/tutorial']" class="media d-flex align-items-center">
-                <div class="icon icon-shape bg-gradient-primary rounded-circle text-white">
+              <a
+                routerLinkActive="active"
+                [routerLink]="['documentation/tutorial']"
+                class="media d-flex align-items-center"
+              >
+                <div
+                  class="
+                    icon icon-shape
+                    bg-gradient-primary
+                    rounded-circle
+                    text-white
+                  "
+                >
                   <i class="ni ni-spaceship"></i>
                 </div>
                 <div class="media-body ml-3">
-                  <h6 class="heading text-primary mb-md-1">Getting started</h6>
-                  <p class="description d-none d-md-inline-block mb-0">Learn how to use Argon compiling Scss, change brand colors and more.</p>
+                 
+
+
+                  <h6 class="heading text-primary mb-md-1"> Element/Network Management</h6>
+                  <p class="description d-none d-md-inline-block mb-0">
+                    <a href="#">Develop a new EMS</a><br>
+                    <a href="#">EMS Services</a>
+                  </p>
                 </div>
               </a>
-              <a routerLinkActive="active" [routerLink]="['documentation/colors']" class="media d-flex align-items-center">
-                <div class="icon icon-shape bg-gradient-success rounded-circle text-white">
+              <a
+                routerLinkActive="active"
+                [routerLink]="['documentation/colors']"
+                class="media d-flex align-items-center"
+              >
+                <div
+                  class="
+                    icon icon-shape
+                    bg-gradient-success
+                    rounded-circle
+                    text-white
+                  "
+                >
                   <i class="ni ni-palette"></i>
                 </div>
                 <div class="media-body ml-3">
-                  <h6 class="heading text-primary mb-md-1">Foundation</h6>
-                  <p class="description d-none d-md-inline-block mb-0">Learn more about colors, typography, icons and the grid system we used for Argon.</p>
+                  <h6 class="heading text-primary mb-md-1">Smart Streets
+                    </h6>
+                  <p class="description d-none d-md-inline-block mb-0">
+                    You are a city/municipality wanting to reduce street- lighting costs and manage all street assets.
+                  </p>
                 </div>
               </a>
-              <a routerLinkActive="active" [routerLink]="['documentation/alerts']" class="media d-flex align-items-center">
-                <div class="icon icon-shape bg-gradient-warning rounded-circle text-white">
+              <a
+                routerLinkActive="active"
+                [routerLink]="['documentation/alerts']"
+                class="media d-flex align-items-center"
+              >
+                <div
+                  class="
+                    icon icon-shape
+                    bg-gradient-warning
+                    rounded-circle
+                    text-white
+                  "
+                >
                   <i class="ni ni-ui-04"></i>
                 </div>
                 <div class="media-body ml-3">
-                  <h5 class="heading text-warning mb-md-1">Components</h5>
-                  <p class="description d-none d-md-inline-block mb-0">Browse our 50 beautiful handcrafted components offered in the Free version.</p>
+                  <h5 class="heading text-warning mb-md-1">Smart Energy
+                   </h5>
+                  <p class="description d-none d-md-inline-block mb-0">
+                    You are a technology provider looking to manage smart energy/grid devices in an efficient manner.
+                  </p>
                 </div>
               </a>
+
+              <a
+              routerLinkActive="active"
+              [routerLink]="['documentation/alerts']"
+              class="media d-flex align-items-center"
+            >
+              <div
+                class="
+                  icon icon-shape
+                  bg-gradient-warning
+                  rounded-circle
+                  text-white
+                "
+              >
+                <i class="ni ni-ui-04"></i>
+              </div>
+              <div class="media-body ml-3">
+                <h5 class="heading text-warning mb-md-1">Smart Lighting</h5>
+                <p class="description d-none d-md-inline-block mb-0">
+                  You are an office, dealership, warehouse, parking garage interested in lowering lighting costs.
+                </p>
+              </div>
+            </a>
+
+            <a
+            routerLinkActive="active"
+            [routerLink]="['documentation/alerts']"
+            class="media d-flex align-items-center"
+          >
+            <div
+              class="
+                icon icon-shape
+                bg-gradient-warning
+                rounded-circle
+                text-white
+              "
+            >
+              <i class="ni ni-ui-04"></i>
+            </div>
+            <div class="media-body ml-3">
+              <h5 class="heading text-warning mb-md-1">Smart Cities
+                </h5>
+              <p class="description d-none d-md-inline-block mb-0">
+                You are a city/municipality looking to manage various smart city assets from a single console.
+              </p>
+            </div>
+          </a>
             </div>
           </div>
         </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link no-caret" data-toggle="dropdown" role="button">
+            <i class="ni ni-ui-04 d-lg-none"></i>
+            <span class="nav-link-inner--text text-dark">Products</span>
+          </a>
+          <div class="dropdown-menu-xl dropdown-menu">
+            <div class="dropdown-menu-inner">
+              <a
+                routerLinkActive="active"
+                [routerLink]="['documentation/tutorial']"
+                class="media d-flex align-items-center"
+              >
+                <div
+                  class="
+                    icon icon-shape
+                    bg-gradient-primary
+                    rounded-circle
+                    text-white
+                  "
+                >
+                  <i class="ni ni-spaceship"></i>
+                </div>
+
+                <div class="media-body ml-3">
+                  <h6 class="heading text-primary mb-md-1">NetMan</h6>
+                  <p class="description d-none d-md-inline-block mb-0">
+                    Element Management System (EMS) platform to deliver your EMS
+                    to the market quickly.
+                  </p>
+                </div>
+              </a>
+              <a
+                routerLinkActive="active"
+                [routerLink]="['documentation/colors']"
+                class="media d-flex align-items-center"
+              >
+                <div
+                  class="
+                    icon icon-shape
+                    bg-gradient-success
+                    rounded-circle
+                    text-white
+                  "
+                >
+                  <i class="ni ni-palette"></i>
+                </div>
+                <div class="media-body ml-3">
+                  <h6 class="heading text-primary mb-md-1">StreetMan</h6>
+                  <p class="description d-none d-md-inline-block mb-0">
+                    Central Management Software (CMS) to manage smart street
+                    assets from different vendors.
+                  </p>
+                </div>
+              </a>
+              <a
+                routerLinkActive="active"
+                [routerLink]="['documentation/alerts']"
+                class="media d-flex align-items-center"
+              >
+                <div
+                  class="
+                    icon icon-shape
+                    bg-gradient-warning
+                    rounded-circle
+                    text-white
+                  "
+                >
+                  <i class="ni ni-ui-04"></i>
+                </div>
+                <div class="media-body ml-3">
+                  <h5 class="heading text-warning mb-md-1">SmartMan</h5>
+                  <p class="description d-none d-md-inline-block mb-0">
+                    Scalable and secure device management platform to manage any type of smart energy/grid assets.
+                  </p>
+                </div>
+              </a>
+              <a
+              routerLinkActive="active"
+              [routerLink]="['documentation/colors']"
+              class="media d-flex align-items-center"
+            >
+              <div
+                class="
+                  icon icon-shape
+                  bg-gradient-success
+                  rounded-circle
+                  text-white
+                "
+              >
+              
+                <i class="ni ni-palette"></i>
+              </div>
+              <div class="media-body ml-3">
+                <h6 class="heading text-primary mb-md-1">LightMan</h6>
+                <p class="description d-none d-md-inline-block mb-0">
+                  Easy-to-use software to manage smart area lighting and building lighting cost effectively.
+                </p>
+              </div>
+            </a>
+            <a
+            routerLinkActive="active"
+            [routerLink]="['documentation/alerts']"
+            class="media d-flex align-items-center"
+          >
+            <div
+              class="
+                icon icon-shape
+                bg-gradient-warning
+                rounded-circle
+                text-white
+              "
+            >
+              <i class="ni ni-ui-04"></i>
+            </div>
+            <div class="media-body ml-3">
+              <h5 class="heading text-warning mb-md-1">CitiMan</h5>
+              <p class="description d-none d-md-inline-block mb-0">
+                Complete management platform to monitor, manage, and control various smart city assets.
+              </p>
+            </div>
+          </a>
+            </div>
+          </div>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link">
+            <i class="ni ni-collection d-lg-none"></i>
+            <span class="nav-link-inner--text text-dark">Technology</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link">
+            <i class="ni ni-collection d-lg-none"></i>
+            <span class="nav-link-inner--text text-dark">Partners</span>
+          </a>
+        </li>
+
         <li class="nav-item dropdown">
           <a class="nav-link no-caret" data-toggle="dropdown" role="button">
             <i class="ni ni-collection d-lg-none"></i>
-            <span class="nav-link-inner--text">Examples</span>
+            <span class="nav-link-inner--text text-dark">Company</span>
           </a>
           <div class="dropdown-menu">
-            <a [routerLink]="['/landing']" class="dropdown-item">Landing</a>
-            <a [routerLink]="['/user-profile']" class="dropdown-item">Profile</a>
-            <a [routerLink]="['/login']" class="dropdown-item">Login</a>
-            <a [routerLink]="['/register']" class="dropdown-item">Register</a>
+            <a [routerLink]="['/landing']" class="dropdown-item">About Us</a>
+            <a [routerLink]="['/user-profile']" class="dropdown-item"
+              >Costomer Testimonials</a
+            >
+            <a [routerLink]="['/login']" class="dropdown-item">Newsroom</a>
+            <a [routerLink]="['/register']" class="dropdown-item"
+              >Media Coverage</a
+            >
+            <a [routerLink]="['/register']" class="dropdown-item"
+              >Product Supports</a
+            >
+            <a [routerLink]="['/register']" class="dropdown-item">Careers</a>
+            <a [routerLink]="['/register']" class="dropdown-item"
+              >Get Pricing</a
+            >
+            <a [routerLink]="['/register']" class="dropdown-item">Contact Us</a>
           </div>
         </li>
-      </ul>
-      <ul class="navbar-nav align-items-lg-center ml-lg-auto">
         <li class="nav-item">
+          <a class="nav-link">
+            <i class="ni ni-collection d-lg-none"></i>
+            <span class="nav-link-inner--text text-dark">Blog</span>
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link">
+            <button type="button" class="btn btn-primary btn-sm">Contact Us</button>
+          </a>
+        </li>
+      </ul>
+      <!-- <ul class="navbar-nav align-items-lg-center ml-lg-auto">
+        <li class="nav-item text-dark">
           <a class="nav-link nav-link-icon" href="https://www.facebook.com/creativetim" target="_blank" data-toggle="tooltip" title="Like us on Facebook">
             <i class="fa fa-facebook-square"></i>
             <span class="nav-link-inner--text d-lg-none">Facebook</span>
@@ -108,7 +383,7 @@
             <span class="nav-link-inner--text">Download</span>
           </a>
         </li>
-      </ul>
+      </ul> -->
     </div>
   </div>
 </nav>
